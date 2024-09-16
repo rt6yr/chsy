@@ -4,6 +4,7 @@ import SDIcon from "@/app/icons/sd.svg";
 import ReturnIcon from "@/app/icons/return.svg";
 import HistoryIcon from "@/app/icons/history.svg";
 import Locale from "@/app/locales";
+import Katlon from "@/app/icons/2aoMefKo8YDDeqJnn6QO31d8k7S.svg";
 
 import { Path, REPO_URL } from "@/app/constant";
 
@@ -123,7 +124,7 @@ export function SideBar(props: { className?: string }) {
       <SideBarTail
         primaryAction={
           <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
-            <IconButton icon={<GithubIcon />} shadow />
+            <IconButton icon={<Katlon />} shadow />
           </a>
         }
         secondaryAction={
