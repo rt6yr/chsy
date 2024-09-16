@@ -8,8 +8,8 @@
     "withGlobalTauri": true
   },
   "package": {
-    "productName": "NextChat",
-    "version": "2.11.3"
+    "productName": "katlon",
+    "version": "2.15.2"
   },
   "tauri": {
     "allowlist": {
@@ -50,6 +50,11 @@
       },
       "notification": {
         "all": true
+      },
+      "http": {
+        "all": true,
+        "request": true,
+        "scope": ["https://*", "http://*"]
       }
     },
     "bundle": {
