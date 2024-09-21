@@ -299,60 +299,68 @@ const anthropicModels = [
   "claude-3-5-sonnet-20240620",
 ];
 
-const baiduModels = [
-  "ernie-4.0-turbo-8k",
-  "ernie-4.0-8k",
-  "ernie-4.0-8k-preview",
-  "ernie-4.0-8k-preview-0518",
-  "ernie-4.0-8k-latest",
-  "ernie-3.5-8k",
-  "ernie-3.5-8k-0205",
-  "ernie-speed-128k",
-  "ernie-speed-8k",
-  "ernie-lite-8k",
-  "ernie-tiny-8k",
-];
+// const baiduModels = [
+//   "ernie-4.0-turbo-8k",
+//   "ernie-4.0-8k",
+//   "ernie-4.0-8k-preview",
+//   "ernie-4.0-8k-preview-0518",
+//   "ernie-4.0-8k-latest",
+//   "ernie-3.5-8k",
+//   "ernie-3.5-8k-0205",
+//   "ernie-speed-128k",
+//   "ernie-speed-8k",
+//   "ernie-lite-8k",
+//   "ernie-tiny-8k",
+// ];
 
-const bytedanceModels = [
-  "Doubao-lite-4k",
-  "Doubao-lite-32k",
-  "Doubao-lite-128k",
-  "Doubao-pro-4k",
-  "Doubao-pro-32k",
-  "Doubao-pro-128k",
-];
+// const bytedanceModels = [
+//   "Doubao-lite-4k",
+//   "Doubao-lite-32k",
+//   "Doubao-lite-128k",
+//   "Doubao-pro-4k",
+//   "Doubao-pro-32k",
+//   "Doubao-pro-128k",
+// ];
 
-const alibabaModes = [
-  "qwen-turbo",
-  "qwen-plus",
-  "qwen-max",
-  "qwen-max-0428",
-  "qwen-max-0403",
-  "qwen-max-0107",
-  "qwen-max-longcontext",
-];
+// const alibabaModes = [
+//   "qwen-turbo",
+//   "qwen-plus",
+//   "qwen-max",
+//   "qwen-max-0428",
+//   "qwen-max-0403",
+//   "qwen-max-0107",
+//   "qwen-max-longcontext",
+// ];
 
-const tencentModels = [
-  "hunyuan-pro",
-  "hunyuan-standard",
-  "hunyuan-lite",
-  "hunyuan-role",
-  "hunyuan-functioncall",
-  "hunyuan-code",
-  "hunyuan-vision",
-];
+// const tencentModels = [
+//   "hunyuan-pro",
+//   "hunyuan-standard",
+//   "hunyuan-lite",
+//   "hunyuan-role",
+//   "hunyuan-functioncall",
+//   "hunyuan-code",
+//   "hunyuan-vision",
+// ];
 
-const moonshotModes = ["moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k"];
+// const moonshotModes = ["moonshot-v1-8k", "moonshot-v1-32k", "moonshot-v1-128k"];
 
-const iflytekModels = [
-  "general",
-  "generalv3",
-  "pro-128k",
-  "generalv3.5",
-  "4.0Ultra",
-];
+// const iflytekModels = [
+//   "general",
+//   "generalv3",
+//   "pro-128k",
+//   "generalv3.5",
+//   "4.0Ultra",
+// ];
 
-let seq = 1000; // 内置的模型序号生成器从1000开始
+//  Do not display chinise models in main program , 
+const baiduModels=[];
+const bytedanceModels=[];
+const alibabaModes=[];
+const tencentModels=[];
+const moonshotModes=[];
+const iflytekModels=[];
+
+let seq = 1000; 
 export const DEFAULT_MODELS = [
   ...openaiModels.map((name) => ({
     name,
@@ -362,7 +370,7 @@ export const DEFAULT_MODELS = [
       id: "openai",
       providerName: "OpenAI",
       providerType: "openai",
-      sorted: 1, // 这里是固定的，确保顺序与之前内置的版本一致
+      sorted: 1, 
     },
   })),
   ...openaiModels.map((name) => ({
